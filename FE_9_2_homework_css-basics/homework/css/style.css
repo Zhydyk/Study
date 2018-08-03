@@ -1,0 +1,217 @@
+/* 
+
+write your code here
+
+*/
+
+
+/* task 2 Hover */
+
+.tm-content-box .gallery-container .img-fluid {
+    border-radius: 200px;
+}
+
+.box-bg:hover {
+    background-color: #76cdd7;
+}
+
+.tm-section-title:hover {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+
+/*task 3 Change color of first letter in each paragraphs to #76cdd7 and font size to 30px. */
+
+p::first-letter {
+    color: #76cdd7;
+    font-size: 30px;
+}
+
+
+/*task 4 box-shadow*/
+
+.tm-sidebar,
+.tm-content-box {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+}
+
+
+/*task 5 Add triangle to each section on the page using pseudo elements*/
+
+section,
+.blocks,
+#home,
+#about {
+    position: relative;
+}
+
+.tm-content-box::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 0;
+    width: 0;
+    left: 0;
+    border: 25px solid transparent;
+    border-left: 150px solid #76cdd7;
+    border-top: 0px solid #76cdd7;
+}
+
+
+/*task 6 Change color of ‘How We Do It’ to gainsboro and add letter spacing 5px*/
+
+div.carousel-content h2.tm-section-title {
+    color: gainsboro;
+    letter-spacing: 5px;
+}
+
+
+/*task 7 Each first paragraph which placed after h2 tag should have italic font style.*/
+
+
+/*task 8 Text in the paragraph should look like in Figure 6*/
+
+.tm-section-description {
+    text-indent: 1.5em;
+    letter-spacing: 1px;
+}
+
+h2+p {
+    font-style: italic;
+}
+
+
+/*task 9  In this block apply the following styles:
+-	already visited links should become silver color
+-	the hovered links should look like “6. Architects” item
+-	add ‘new’ label to the end of words. It should be applied only for ‘Designers’ and ‘Strategists’ items.
+ */
+
+.heading .pad h2 {
+    text-align: center;
+    color: #76cdd7;
+}
+
+.heading .pad ol li a {
+    color: #000000;
+}
+
+
+/* .heading .pad ol li a:visited {
+    color: #999999;
+    text-decoration: none;
+} */
+
+.heading .pad ol li a:hover {
+    color: #76cdd7;
+    text-decoration: underline;
+}
+
+.heading .pad ol li a:active,
+.heading .pad ol li a:focus {
+    color: #999999;
+    text-decoration: none;
+}
+
+.text:first-child::after,
+.text:nth-child(3)::after {
+    content: "New";
+    color: red;
+    font-size: 10px;
+    vertical-align: top;
+}
+
+
+/*task 10 Add layout and styles for following block.*/
+
+.blocks .tm-content-box .gallery-container .img-fluid {
+    border-radius: 0;
+}
+
+.blocks .tm-content-box ul li p:first-letter {
+    color: black;
+}
+
+.blocks .tm-content-box ul li:nth-child(odd) {
+    background: #dddddd;
+}
+
+
+/*task 11 Take a look to sidebar in Figure 10. You need to add the silver border to the bottom of each item, except the last one*/
+
+.tm-main-nav ul li:nth-child(-n+3) {
+    border-bottom: 2px dotted silver;
+}
+
+
+/*task 12 Change the text color of text inputs and submit button to red. Add asterisk to email field as shown in Figure 11*/
+
+.form-group input,
+.contact-form button {
+    color: #eb1010;
+}
+
+.mandatory-field::after {
+    content: "*";
+    color: #eb1010;
+    font-size: 16px;
+    font-weight: bold;
+    vertical-align: top;
+}
+
+.contact-form button:hover {
+    background-color: #1ba5cf;
+}
+
+
+/*task 1 media for print*/
+
+@media print {
+    .tm-banner {
+        height: 250px;
+    }
+    .tm-sidebar {
+        display: none;
+    }
+    .tm-main-content {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    h2.tm-section-title {
+        color: #0083b3;
+    }
+    .flex-item.tm-team-description-container {
+        width: 100%;
+        text-align: left;
+        padding: 0 0 0 50px;
+        margin: 0;
+    }
+    .flex-2-col {
+        display: block;
+    }
+    .flex-item {
+        text-align: center;
+    }
+    .tm-content-box.flex-2-col,
+    .tm-content-box.margin-b-10 {
+        display: block;
+    }
+    .tm-content-box::after {
+        display: none;
+    }
+    .tm-content-box,
+    .blocks {
+        display: none;
+    }
+    .tm-main-content .tm-banner-inner .tm-banner-text::first-letter,
+    .flex-2-col .tm-section-description::first-letter,
+    .tm-footer .text-xs-center::first-letter {
+        color: #666;
+        font-size: 20px;
+    }
+    .flex-2-col .tm-section-description {
+        font-style: normal;
+    }
+}
