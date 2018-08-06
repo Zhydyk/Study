@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+    background: $contentBackground;
+    font-family: $mainFont;
+}
+
+p {
+    font-size: 16px;
+    color: $colorForP;
+    margin: 0 0 16px 0;
+    text-align: justify;
+}
+
+.main-wrapper {
+    width: 960px;
+    margin: 0 auto;
+    background-color: $contentBackground;
+}
+
+header {
+    display: flex;
+    .logo {
+        width: 596px;
+        img {
+            width: 100%;
+        }
+    }
+    nav {
+        margin-top: 250px;
+        padding: 0;
+        a {
+            font-size: 22px;
+            color: $fontColor;
+            text-decoration: none;
+            padding: 10px 1em;
+            text-transform: uppercase;
+        }
+    }
+}
+
+hr {
+    color: #999999;
+    margin: 1.5em 0;
+}
+
+.toolbar {
+    text-align: right;
+    margin: 15px 0;
+}
+
+input[type=text] {
+    box-sizing: border-box;
+    border: 1.5px solid $fontColor;
+    padding: 20px 30px 20px 30px;
+    font-size: 22px;
+    font-weight: bold;
+    background-color: $contentBackground;
+    &::placeholder {
+        color: $fontColor;
+    }
+}
+
+#list {
+    display: flex;
+    align-items: flex-start;
+    flex-flow: wrap;
+    justify-content: space-between;
+    article {
+        background-color: $backgroundMainBlock;
+        padding: 10px 10px;
+        margin: 10px 0 0 0;
+        box-sizing: border-box;
+        width: 48%;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+h1,
+h3,
+h4 {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h1 {
+    margin: 60px 0 0 0;
+}
+
+h1,
+h4 {
+    color: $h1h4ColorText;
+    text-align: right;
+}
+
+h3 {
+    color: $h3ColorText;
+    border-top: 1px solid $borderColor;
+    padding: 13px 0 0 0;
+    margin: 10px 0 0 0;
+}
+
+h4 {
+    margin: 7px 0;
+}
+
+.post-description {
+    color: $colorForDate;
+}
+
+#about {
+    div {
+        img {
+            width: 100%;
+        }
+    }
+}
+
+form {
+    display: block;
+    box-sizing: border-box;
+    .form-submit {
+        text-align: right;
+        .footer-submit-form {
+            color: $footerSubmitColorText;
+            font-size: 22px;
+            border-radius: 0;
+            padding: 10px 90px;
+            background-color: $footerSubmitBackground;
+            border: 1px solid $borderColor;
+            font-weight: 300;
+            text-transform: uppercase;
+        }
+    }
+    .form-input {
+        .footer-contact-form {
+            width: 96.8%;
+            border: 1px solid $borderColor;
+            margin: 10px 0;
+            padding: .575rem .85rem;
+            background-color: $contentBackground;
+        }
+    }
+}
+
+textarea {
+    &::placeholder {
+        font-family: $mainFont;
+    }
+}
+
+footer {
+    span {
+        color: $borderColor;
+        font-size: 12px;
+    }
+}

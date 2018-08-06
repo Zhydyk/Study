@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  background: #dbd8d8;
+  font-family: "Roboto", sans-serif; }
+
+p {
+  font-size: 16px;
+  color: #000000;
+  margin: 0 0 16px 0;
+  text-align: justify; }
+
+.main-wrapper {
+  width: 960px;
+  margin: 0 auto;
+  background-color: #dbd8d8; }
+
+header {
+  display: flex; }
+  header .logo {
+    width: 596px; }
+    header .logo img {
+      width: 100%; }
+  header nav {
+    margin-top: 250px;
+    padding: 0; }
+    header nav a {
+      font-size: 22px;
+      color: #e98a1d;
+      text-decoration: none;
+      padding: 10px 1em;
+      text-transform: uppercase; }
+
+hr {
+  color: #999999;
+  margin: 1.5em 0; }
+
+.toolbar {
+  text-align: right;
+  margin: 15px 0; }
+
+input[type=text] {
+  box-sizing: border-box;
+  border: 1.5px solid #e98a1d;
+  padding: 20px 30px 20px 30px;
+  font-size: 22px;
+  font-weight: bold;
+  background-color: #dbd8d8; }
+  input[type=text]::placeholder {
+    color: #e98a1d; }
+
+#list {
+  display: flex;
+  align-items: flex-start;
+  flex-flow: wrap;
+  justify-content: space-between; }
+  #list article {
+    background-color: #ffffff;
+    padding: 10px 10px;
+    margin: 10px 0 0 0;
+    box-sizing: border-box;
+    width: 48%; }
+    #list article img {
+      width: 100%; }
+
+h1,
+h3,
+h4 {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0; }
+
+h1 {
+  margin: 60px 0 0 0; }
+
+h1,
+h4 {
+  color: #e98a1d;
+  text-align: right; }
+
+h3 {
+  color: #4d4031;
+  border-top: 1px solid #999999;
+  padding: 13px 0 0 0;
+  margin: 10px 0 0 0; }
+
+h4 {
+  margin: 7px 0; }
+
+.post-description {
+  color: #999999; }
+
+#about div img {
+  width: 100%; }
+
+form {
+  display: block;
+  box-sizing: border-box; }
+  form .form-submit {
+    text-align: right; }
+    form .form-submit .footer-submit-form {
+      color: #ffffff;
+      font-size: 22px;
+      border-radius: 0;
+      padding: 10px 90px;
+      background-color: #e98a1d;
+      border: 1px solid #999999;
+      font-weight: 300;
+      text-transform: uppercase; }
+  form .form-input .footer-contact-form {
+    width: 96.8%;
+    border: 1px solid #999999;
+    margin: 10px 0;
+    padding: .575rem .85rem;
+    background-color: #dbd8d8; }
+
+textarea::placeholder {
+  font-family: "Roboto", sans-serif; }
+
+footer span {
+  color: #999999;
+  font-size: 12px; }
+
+/*# sourceMappingURL=style2.css.map */
