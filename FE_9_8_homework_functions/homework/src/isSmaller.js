@@ -2,6 +2,6 @@
 
 
 function isSmaller(a, c) {
-    return a < c;
+    return !isBigger(a, c);
 }
 console.log(isSmaller());
