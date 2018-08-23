@@ -2,6 +2,7 @@
 
 
 function getMin(...args) {
-    return args.Math.min();
+
+    return args.reduce((leftNum, rightNum) => leftNum < rightNum ? leftNum : rightNum);
 }
 console.log(getMin());
