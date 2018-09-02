@@ -1,0 +1,110 @@
+/* Your styles goes here */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+#root {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 900px;
+    border: 1px solid #000000;
+    padding-top: 40px;
+    margin-top: 40px;
+}
+
+h1 {
+    margin: 0;
+    padding-bottom: 40px;
+    ;
+}
+
+.header-input {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+input[type=text] {
+    width: 83%;
+    border: 1px solid #000000;
+    height: 40px;
+    margin-left: 40px;
+}
+
+input::placeholder {
+    color: #999999;
+    padding-left: 4px;
+    font-size: 16px;
+}
+
+.addbutton {
+    font-size: 44px;
+    margin-right: 40px;
+}
+
+hr {
+    margin: 20px 40px 20px 20px;
+    width: 90%;
+    background: #000000;
+    height: 2px;
+}
+
+.list-action {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    min-height: 200px;
+    margin-top: 20px;
+}
+
+.container-img {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+img {
+    width: 100%;
+}
+
+input[type=checkbox] {
+    display: none;
+    margin: 0;
+}
+
+.mark,
+.delete {
+    font-size: 36px;
+    cursor: pointer;
+}
+
+.delete {
+    margin-left: auto;
+    margin-right: -8px;
+}
+
+label {
+    height: 36px;
+    width: 400px;
+}
+
+span {
+    align-self: center;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.warning-message {
+    margin: 0 auto;
+    color: red;
+    display: none;
+}
