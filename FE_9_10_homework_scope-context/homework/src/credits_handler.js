@@ -1,4 +1,5 @@
 /* Your code goes here */
+let keynumber = 1;
 
 function userCard(key) {
     let balance = 100,
@@ -63,13 +64,13 @@ class UserAccount {
 
     addCard() {
         if (this.cards.length < this.maxCards) {
-            this.cards.push(userCard(this.cards.length + 1));
+            this.cards.push(userCard(this.cards.length + keynumber));
         } else {
             console.log(`Sorry, you can not have more than three cards`)
         }
     }
 
     getCardByKey(key) {
-        return this.cards[key - 1];
+        return this.cards[key - keynumber];
     }
 }
