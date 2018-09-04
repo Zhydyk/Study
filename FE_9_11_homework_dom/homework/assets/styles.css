@@ -75,8 +75,14 @@ img {
 }
 
 .list {
-    display: flex;
-    justify-content: space-between;
+    margin-right: 50px;
+    align-items: center;
+    cursor: move;
+    margin-bottom: 5px;
+}
+
+.button {
+    margin-left: auto;
 }
 
 ul {
@@ -113,7 +119,7 @@ input[type=checkbox] {
 
 span {
     align-self: center;
-    font-size: 18px;
+    font-size: 20px;
     margin-left: 10px;
 }
 

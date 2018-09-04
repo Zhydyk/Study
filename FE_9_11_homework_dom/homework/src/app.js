@@ -63,7 +63,7 @@ function addItem() {
         ulEl.appendChild(liEl);
 
         let checkboxIcon = document.createElement('i');
-        checkboxIcon.className = 'material-icons';
+        checkboxIcon.setAttribute('class', 'material-icons mark');
         checkboxIcon.appendChild(document.createTextNode('check_box_outline_blank'));
         liEl.appendChild(checkboxIcon);
         let spanEl = document.createElement('span');
@@ -71,23 +71,22 @@ function addItem() {
         spanEl.appendChild(document.createTextNode(' ' + inputValue));
         liEl.appendChild(spanEl);
 
-        let iconEl = document.createElement('i');
-        iconEl.className = 'material-icons';
-        iconEl.appendChild(document.createTextNode('delete'));
+        let iconDeleteEl = document.createElement('i');
+        iconDeleteEl.setAttribute('class', 'material-icons delete');
+        iconDeleteEl.appendChild(document.createTextNode('delete'));
 
-        liEl.appendChild(iconEl);
+        liEl.appendChild(iconDeleteEl);
         itemCounter++;
         document.getElementById('input').value = '';
         addButtonEl.disabled = 'false';
         checkboxIcon.onclick = function() {
             checkboxIcon.innerText = 'check_box';
-
         }
-
-        iconEl.onclick = function() {
+        iconDeleteEl.onclick = function() {
             itemCounter--;
             liEl.remove();
             document.getElementById('warning-message').display = 'none';
+
         }
 
     } else if (inputValue === '') {
@@ -106,3 +105,5 @@ divImgEl.setAttribute('class', 'container-img');
 divImgEl.appendChild(imgEl);
 imgEl.setAttribute('src', '../homework/assets/img/cat.png');
 rootNode.appendChild(divImgEl);
+
+//draggable
