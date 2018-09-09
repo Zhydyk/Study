@@ -79,6 +79,15 @@ function addItem() {
         itemCounter++;
         document.getElementById('input').value = '';
         addButtonEl.disabled = 'false';
+
+
+
+        liEl.ondragstart = (e) => {
+            let elem = e.dataTransfer.setData('li', e.target.className);
+            console.log(e);
+        }
+
+
         checkboxIcon.onclick = function() {
             checkboxIcon.innerText = 'check_box';
         }
@@ -95,6 +104,7 @@ function addItem() {
         document.getElementById('warning-message').style.display = 'block';
         inputEl.disabled = 'false';
     }
+
 }
 
 //div element for img
